@@ -31,13 +31,31 @@ When you have that working, modify your program to print "FizzBuzz" for numbers 
 
 //Solution
 
-let count = 1;
-for(count <= 100;
-  count += 1
-  if(count == for(let numb = 0;
-    numb <= 100;
-    numb += 3) {console.log(numb)}) {
-      console.log("Fizz")
-    }
-) 
+for(let count = 1; count <= 100;
+  count += 1) {
+  if(count % 3 == 0) {
+    console.log("Fizz")
+  } else {if(count % 5 == 0) {
+    console.log("Buzz")
+  } else {
+    console.log(count)
+  }}
+}
+
+//Modified Solution
+
+for(let count = 1; count <= 100;
+  count += 1) {
+    if(count % 3 == 0 & count % 5 == 0) {
+      console.log("Fizzbuzz")
+    } else if(count % 3 == 0) {
+    console.log("Fizz")
+  } else if(count % 5 == 0) {
+    console.log("Buzz")
+  } else {
+    console.log(count)
+  }
+}
+
+
 

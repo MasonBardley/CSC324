@@ -95,7 +95,7 @@ console.log(countBs("BOB"))
 argument that indicates the character that is to be counted (rather than counting only uppercase 
 B characters). Rewrite countBs to make use of this new function.*/
 
-//Solution
+//Solution 2
 
 /* This functions similarly to the previous solution, with the exception that the character
 variable is interchangeable. */

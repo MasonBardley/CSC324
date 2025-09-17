@@ -104,8 +104,8 @@ which variant do you expect to be useful in more situations? Which one runs fast
 
 //Solution
 
-/*The following function creates a new empty array, then works from the array's length backward to
-find individual characters in the given area at the current point: i. 
+/*The following function creates a new empty array, then uses a for loop to work backwards from the
+array's index length to rearrange the original array backwards. 
 */
 
 function reverseArray(array) {

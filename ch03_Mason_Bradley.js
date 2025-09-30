@@ -54,6 +54,10 @@ let isEven = function(n) {
     } else return isEven(n)
 }
 
+
+console.log("\n\n0 is even but your function says it is ...");
+console.log(isEven(0))
+console.log("yikes!\n\n")
 console.log(isEven(50));
 console.log(isEven(75));
 console.log(isEven(-1));

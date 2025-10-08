@@ -4,7 +4,6 @@
   <body>
     <h1>Mountains</h1>
     <div id="mountains"></div>
-  </body>
   <script>
     const MOUNTAINS = [
       {name: "Kilimanjaro", height: 5895, place: "Tanzania", url: "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"},
@@ -22,6 +21,10 @@
     const mountainTable = makeTable(MOUNTAINS);
     target.appendChild(mountainTable);
     
+/* The piece of code above looks at each element in mountains before appending it to the newly
+created table. */
+
+
     // utility functions:
 
     // function to make a table from an array of objects:
@@ -72,6 +75,7 @@
 
     
   </script>
+</body>
 </html>
 
 

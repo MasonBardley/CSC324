@@ -130,15 +130,39 @@ Key takeaway: Static methods operate at the class level, not on individual objec
 If you want, I can show a slightly more advanced pattern where the class can track multiple 
 items statically. That’s a neat way to combine static methods with collections. Do you want me to?*/
 
+//Fixed Solution
+
+class Group {
+  constructor() {
+    this.series = [];
+  }
+  add(toAdd) {
+    if(this.series.indexOf(toAdd) === -1) {
+      this.series.push(toAdd)
+    }
+  }
+  delete(toDelete) {
+    this.series = this.series.filter(elem => elem !== toDelete)
+  }
+  has(toCheck) {
+  return (this.series.indexOf(toCheck) !== -1)
+  }
+  static from(arr) {
+    const newGrp = new Group();
+    for (let elem of arr) {
+      newGrp.add(elem);
+    }
+    return newGrp;
+  }
+}
 
 //Examples
 
 let group = Group.from([10, 20]);
+console.log(group);
 console.log(group.has(10));
-// → true
 console.log(group.has(30));
-// → false
 group.add(10);
 group.delete(10);
 console.log(group.has(10));
-// → false
+

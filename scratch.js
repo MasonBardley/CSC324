@@ -44,3 +44,6 @@ if(myNumbs.indexOf(x) === -1) {
 
 const beasts = ["horse", "cat", "donkey", "toad", "fish", "dragon"]
 console.log(beasts[Math.floor(6 * Math.random())])
+
+
+

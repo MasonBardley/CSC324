@@ -88,7 +88,6 @@ function sortByRandom() {
 
   console.log(myNumbs);
 
-  // Return a random value so sort() can use this function
   return Math.random() - 0.5;
   }
   const sortedByRandom = artists.sort(byRand);

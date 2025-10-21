@@ -76,19 +76,14 @@ function sortByDate() {
 function sortByRandom() {
   console.log("name");
   function byRand(a, b) {
-  let myNumbs = [];
-  myNumbs.push(1, 2, 3, 4, 5);
-
-  console.log(myNumbs.indexOf(6));
-
-  let x = 6;
-  if (myNumbs.indexOf(x) === -1) {
-    myNumbs.push(x);
+    let myNumbs = [];
+    console.log(myNumbs.indexOf(6));
+    let x = 6;
+    if (myNumbs.indexOf(x) === -1) {
+      myNumbs.push(x);
   }
-
-  console.log(myNumbs);
-
-  return Math.random() - 0.5;
+    console.log(myNumbs);
+    return Math.random() - 0.5;
   }
   const sortedByRandom = artists.sort(byRand);
   const tab = document.querySelector("#bhangra");
